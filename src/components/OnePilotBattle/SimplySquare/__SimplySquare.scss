@@ -1,0 +1,13 @@
+$bg-color: #5d3a3a;
+$square-color: #b5e0ba;
+
+.simply-square {
+    background-color: $bg-color;
+    width: 400px;
+    height: 300px;
+    .square {
+        width: 50%;
+        height: 70%;
+        background-color: $square-color;
+    }
+}
