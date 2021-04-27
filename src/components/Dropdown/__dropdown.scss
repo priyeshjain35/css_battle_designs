@@ -1,0 +1,19 @@
+@import "../../globalscss/_variable";
+
+.menu {
+    padding: 5px 20px;
+    .menu-item {
+        color: whitesmoke;
+        font-size: $medium-font;
+        &:hover {
+            font-size: $large-font;
+            color: white;
+            transition: 0.3s;
+            cursor: pointer;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+}
+    }
+}
