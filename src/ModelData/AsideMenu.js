@@ -1,6 +1,6 @@
 const AsideMenu = [
     {"Pilot Battle": [
-        {"component": "SimplySqaure", "MenuName": "Simply Square", "Battle No.": 1},
+        {"component": "SimplySquare", "MenuName": "Simply Square", "Battle No.": 1},
         {"component": "Carrom", "MenuName": "Carrom", "Battle No.": 2},
         {"component": "PushButton", "MenuName": "Push Button", "Battle No.": 3},
     ]},

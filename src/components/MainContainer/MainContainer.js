@@ -3,7 +3,7 @@ import AsideContainer from "../AsideContainer/AsideContainer";
 import { lazy, Suspense } from "react";
 
 import ErrorBoundary from "../ErrorBoundary/ErrorBoundary";
-const SimplySquare =  lazy(() => import('../OnePilotBattle/SimplySquare/SimplySquare'));
+const Routes =  lazy(() => import('../../Router/Routes'));
 
 const renderLoading = () => <p>Loading...</p>
 
@@ -14,7 +14,7 @@ const MainContainer = ({onMenuClick, isMenuIconClicked}) => {
             <section className={`main-container ${isMenuIconClicked ? 'srink-container' : ""}`}>
                 <ErrorBoundary>
                     <Suspense fallback={renderLoading()}>
-                        <SimplySquare />
+                        <Routes />
                     </Suspense>
                 </ErrorBoundary>
             </section>

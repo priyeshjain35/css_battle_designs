@@ -9,7 +9,7 @@ const AsideContainer = ({clickMenuIcon, isExpanded}) => {
         return (
             <div className="nav-menu" key={`${header}_${index}`}>
                 <span>{header}</span>
-                <Dropdown menu={menu}/>
+                <Dropdown menu={menu} title={header}/>
             </div>
         )
     }
