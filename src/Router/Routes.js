@@ -8,12 +8,10 @@ import {
 
 const Routes = () => {
     return (
-        <Router>
-            <Switch>
-                <Route exact={true} path="/:battle/:component/:battle_id" component={WrappedComponent}></Route>
-                <Route exact={true} path="/" component={Home} />
-            </Switch>
-        </Router>
+        <Switch>
+            <Route exact={true} path="/:battle/:component/:battle_id" component={WrappedComponent}></Route>
+            <Route exact={true} path="/" component={Home} />
+        </Switch>
     );
 }
 

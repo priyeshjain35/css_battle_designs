@@ -1,4 +1,4 @@
-const Home = () => {
+const Home = ({location, path, match}) => {
     return (
         <>
         <h2>Welcome To CSS-Battle design's Repository.</h2>

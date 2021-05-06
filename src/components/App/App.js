@@ -3,6 +3,7 @@ import './__App.scss';
 
 import Header from "../Header/Header";
 import MainContainer from "../MainContainer/MainContainer";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   
@@ -11,10 +12,12 @@ function App() {
   const clickMenuIcon = () => setMenuIconClicked(!isMenuIconClicked);
 
   return (
-    <div className={`App ${isMenuIconClicked ? "overlay" : ""}`}>
-      <Header onMenuClick={clickMenuIcon} isMenuIconClicked={isMenuIconClicked}/>
-      <MainContainer onMenuClick={clickMenuIcon} isMenuIconClicked={isMenuIconClicked}/>
-    </div>
+    <Router>  
+      <div className={`App ${isMenuIconClicked ? "overlay" : ""}`}>
+        <Header onMenuClick={clickMenuIcon} isMenuIconClicked={isMenuIconClicked}/>
+        <MainContainer onMenuClick={clickMenuIcon} isMenuIconClicked={isMenuIconClicked}/>
+      </div>
+    </Router>
   );
 }
 
